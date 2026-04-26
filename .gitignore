@@ -1,0 +1,83 @@
+# 隐私凭证
+*_cookies.json
+config.py
+feishu_api.py
+
+# 数据库与数据
+*.db
+*.db-journal
+*.db-wal
+data/
+temp_resumes/
+
+# Python 环境
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 忽略 Python 编译缓存
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 忽略 AI 编程工具/IDE 的缓存
+.opencli/
+.cursor/
+.vscode/
+
+# 忽略浏览器自动化生成的庞大 Profile 缓存
+chrome_debug_profile/
+*profile*/
+
+.boss_browser_profile/
+
+# 忽略 AI 向量数据库与本地记忆缓存
+chroma_mem0_db/
+chroma.sqlite3
+*.chroma/
+
+node_modules/
+.next/
+__pycache__/
+.env
+.venv/
+playwright-report/
+51job_cookies.json
+
+# 环境变量与密钥 (最重要！)
+.env
+*.pem
+liepin_cookies.json
+boss_cookies.json
+51job_cookies.json
+
+# 本地数据库与缓存
+data/*.db
+data/*.db-shm
+data/*.db-wal
+data/.boss_browser_profile/
+temp_resumes/
+
+# Python 缓存与虚拟环境
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+
+# 前端 Node.js 缓存
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# 操作系统生成文件
+.DS_Store
+Thumbs.db

@@ -1,0 +1,51 @@
+# ============================================================
+# Auto-Job-Hunter — 完整 Python 依赖清单 (全量扫描版)
+# 生成时间：2026-04  |  覆盖所有 43 个 .py 文件的第三方导入
+# ============================================================
+
+# --- Web 框架与基础核心 ---
+fastapi>=0.104.1
+uvicorn>=0.24.0
+pydantic>=2.5.2
+python-dotenv>=1.0.0
+
+# --- AI 大模型 SDK ---
+openai>=1.10.0              # 使用 v1.x 新式 API (OpenAI(), .chat.completions.create)
+
+# --- LangChain 生态 (4 个包缺一不可！旧版单包已拆分) ---
+# 对应：multi_agent_workflow/agent_workflow.py
+langchain>=0.2.0            # 核心编排框架
+langchain-openai>=0.1.0     # from langchain_openai import ChatOpenAI
+langchain-core>=0.2.0       # from langchain_core.prompts import ChatPromptTemplate
+langgraph>=0.1.0            # from langgraph.graph import StateGraph, END
+
+# --- AI 记忆层 (Mem0 + ChromaDB 本地向量存储) ---
+# 对应：ai_agents/memory_manager.py
+mem0ai>=0.1.0               # from mem0 import Memory
+chromadb>=0.5.0             # vector_store provider="chroma" (mem0 后端依赖)
+
+# --- 网络请求与 API 交互 ---
+requests>=2.31.0
+urllib3>=2.1.0
+httpx>=0.25.0               # boss_scraper/boss_cli/client.py & auth.py
+
+# --- 🚀 核心 RPA 自动化与防风控引擎 ---
+DrissionPage>=4.0.4         # BOSS/猎聘/51job 静默操作核心 (原 beta 版升稳定版)
+playwright>=1.40.0          # 基础爬虫与 DOM 穿透
+playwright-stealth>=1.0.6   # from playwright_stealth import Stealth (Cookie采集反检测)
+pyautogui>=0.9.54           # 物理级鼠标/键盘轨迹模拟
+pyperclip>=1.8.2            # 剪贴板交互
+fake-useragent>=1.4.0       # UA 伪装 (51job_collector.py)
+
+# --- 🤖 极客终端 CLI 工具与配置文件 ---
+# 对应：boss_scraper/boss_cli/ 全部文件
+click>=8.1.0                # import click (CLI 框架)
+rich>=13.0.0                # from rich.console/table/panel import ...
+qrcode>=7.4.2               # import qrcode (终端二维码登录)
+PyYAML>=6.0.1               # import yaml (boss_detail_fetcher & boss_cli commands)
+browser-cookie3>=0.19.1     # import browser_cookie3 (从本地浏览器提取 Cookie，可选)
+
+# --- 📄 简历文档处理模块 ---
+docx2pdf>=0.1.8             # Word 转 PDF (jobhunter-backend/main.py)
+pdf2image>=1.16.3           # PDF 转图片，发长图使用 (需系统安装 poppler)
+docxtpl>=0.16.7             # Word 模板变量渲染 (from docxtpl import DocxTemplate, RichText)

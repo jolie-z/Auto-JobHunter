@@ -1,0 +1,93 @@
+=========================================
+BOSS-CLI 项目使用手册（Windsurf 备注版）
+=========================================
+
+1. 项目定位：
+   基于 Python 的命令行工具，通过调用 BOSS 直聘接口实现职位搜索、详情查看、个人信息管理及自动化投递。
+
+2. 核心价值：
+   - 极客找工作：无需打开浏览器，直接在终端筛选数据。
+   - 数据驱动：支持将搜索结果导出为 CSV/JSON，方便进行岗位竞争力和薪资分析。
+   - 自动沟通：支持批量打招呼功能。
+
+3. 关键环境：
+   - 运行环境：Python 3.10+
+   - 登录关联：使用 `boss login --cookie-source edge` 关联 Edge 浏览器状态。
+   - 翻页抓取指令：python data_collector.py -p 2 （抓取第2页）
+
+4. 常用命令速查：
+   - 状态检查：boss status
+   - 搜索岗位：boss search "数据分析师" --city 上海 --salary 20-30K
+   - 批量投递：boss batch-greet --count 5
+   - 导出数据：boss export --format csv
+
+5. 注意事项：
+   - 风险控制：请勿短时间内进行超高频操作，避免触发风控导致封号。
+   - 浏览器：操作前确保 Edge 已手动登录 BOSS 官网。
+=========================================
+
+Commands:
+  applied      查看已投递的职位
+  batch-greet  批量向搜索结果中的 Boss 打招呼
+  chat         查看沟通过的 Boss 列表
+  cities       列出支持的城市代码
+  detail       查看职位详情 (需要 securityId 或使用 boss show)
+  export       导出搜索结果为 CSV 或 JSON
+  greet        向 Boss 打招呼 / 投递简历 (需要 securityId)
+  history      查看浏览历史
+  interviews   查看面试邀请
+  login        扫码登录 Boss 直聘 APP
+  logout       清除已保存的登录凭证
+  me           查看个人资料和求职期望
+  recommend    查看推荐职位 (基于求职期望)
+  search       搜索职位 (例: boss search Python --city 北京 --industry 互联网)
+  show         按搜索结果编号查看职位详情 (例: boss show 3)
+  status       查看当前登录状态
+
+1.账号与个人信息管理
+
+扫码登录/退出账号 (login, logout)
+
+查看当前的登录状态 (status)
+
+查看自己的在线简历资料和求职期望 (me)
+
+2. 找工作与看机会
+
+精准搜索： 可以像写代码一样按条件搜索职位（例如指定城市、行业、薪资范围等）(search, cities)
+
+获取推荐： 让系统根据你的期望自动推荐职位 (recommend)
+
+查看详情： 查看某个具体职位的详细要求和公司信息 (show, detail)
+
+数据导出： 把搜到的职位列表导出成 Excel (CSV) 或 JSON 格式，方便你自己做统计和筛选 (export)
+
+3. 投递与沟通
+
+打招呼/投简历： 直接向看中的职位 Boss 发送沟通请求 (greet)
+
+批量操作： 对搜索出来的一批职位一键发送打招呼 (batch-greet)
+
+4. 进度追踪
+
+查看之前浏览过的记录 (history)
+
+查看已经成功投递的职位 (applied)
+
+查看沟通过的 Boss 列表 (chat)
+
+查看收到的面试邀请 (interviews)
+
+
+Options:
+  -c, --city TEXT                 城市名称或代码
+  -n, --count INTEGER             打招呼数量 (默认: 5)
+  --salary [3K以下|3-5K|5-10K|10-15K|15-20K|20-30K|30-50K|50K以上]
+                                  薪资筛选
+  --exp [不限|在校/应届|1年以内|1-3年|3-5年|5-10年|10年以上]
+                                  工作经验筛选
+  --degree [不限|初中及以下|中专/中技|高中|大专|本科|硕士|博士]
+                                  学历筛选
+  --dry-run                       仅预览，不实际发送
+  -y, --yes                       跳过确认提示
+  --help                          Show this message and exit.

@@ -1,0 +1,112 @@
+{
+  "personal_info": {
+    "name": "X X",
+    "contact": "147-XXXX-XXXX | XXXX@example.com",
+    "city": "广州、深圳",
+    "github_url": " https://github.com/jolie-zeng",
+    "portfolio_url": "https://www.heywhale.com/home/user/profile/68ce676ab70bb645464db39e/overview"
+  },
+  "summary": "近 5 年电商业务底盘，200+ 小时全英文跨国协同沉淀。依托极强自驱力不断跨越技术边界，从主导高阶商业归因分析（Python/SQL/Tableau），全面进化至独立架构全自动 AI 业务工作流（RPA + LLM + 飞书中台）。兼具底层商业嗅觉与极客工程思维，精通现代化 AI 辅助编程（Cursor/v0），擅长从真实业务痛点出发，敏捷开发端到端的 AI SaaS MVP（最小可行性产品），致力于用前沿技术打造极致的降本增效闭环",
+  "skills": [
+    {
+      "category": "大模型生态与 AI 自动化",
+      "descriptions": [
+        "精通 **Prompt Engineering** 与复杂 Agent 构建，具备 0 到 1 独立开发基于大模型的数据抓取与评估系统的实战经验。",
+        "掌握 **RPA**（GUI 自动化）与底层风控对抗策略，能打通全自动数据流转闭环。"
+      ]
+    },
+    {
+      "category": "数据工程与全栈研发",
+      "descriptions": [
+        "具备极强 AI 原生架构思维，精通大模型 API 深度接入（通义千问/DeepSeek等），熟练构建高约束性的复杂 Prompt，实现多维度逻辑推理与结构化数据输出",
+        "熟练掌握 RPA（GUI 自动化）与底层风控对抗策略，能独立打通“自动化抓取 - AI 数据清洗 (Token 成本优化) - 状态机流转”的完整闭环"
+      ]
+    },
+    {
+      "category": "数据工程与全栈研发",
+      "descriptions": [
+        "熟练使用 Python 开发自动化数据管道（ETL），精通 Pandas/NumPy 进行特征工程、复杂文本清洗与去重逻辑处理",
+        "精通复杂 SQL（多表 JOIN/窗口函数/嵌套查询），具备极强的数据指标拆解与 EDA（探索性数据分析）能力"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_name": "基于大模型的全自动岗位抓取与深度评估系统 ",
+      "role": "独立开发者",
+      "time": "2026.02",
+      "source_link": "github.com/gemini/jobhunter",
+      "tech_stack": "Python, SQL, docxtpl, docx2pdf, Next.js, FastAPI, v0",
+      "star_s_background": "传统美妆智能客服存在严重的体验与维护瓶颈，本项目通过大语言模型 (LLM) + Pandas规则引擎 + Python自动化图像渲染，打造了全链路的美妆智能导购闭环",
+      "star_t_task": "需构建一个全自动化的AI智能助手，覆盖从 BOSS 直聘岗位抓取到 AI 自动改写简历、多维度得分评估的全链路流程，打造沉浸式极客求职看板。",
+      "star_a_actions": [
+        {
+          "subtitle": "多源数据清洗与特征工程",
+          "description": "使用 **Python** 处理 10万+ 条交易日志，清洗非结构化客诉文本..."
+        },
+        {
+          "subtitle": "核心：AI 工程化落地与自动化回写",
+          "description": "独立主导了 **FastAPI** 后端的开发，精通 **docxtpl** 深度接入与 Word 富文本生成策略，完美保留 8号字和极密排版。成功调用飞书底层 API 实现生成的 **docx/pdf附件** 全自动回写单元格。"
+        },
+        {
+          "subtitle": "沉浸式前端工作台构建",
+          "description": "依托 **v0** 极速完成Next.js三栏布局 UI 搭建，精通 **Shadcn/ui** 核心组件（Resizable Panel Group）的数据流绑定策略，实现 A4纸全域可编辑与 AI 改写收益的 inline 批注呈现。"
+        }
+      ],
+      "star_r_results": "**实现了一键生成 Word、PDF 和两张高清 JPG 附件并全自动回写飞书单元格的闭环。极大地提升了海投微调的效率，将每日筛选、改写耗时从小时级缩短至 5 分钟以内，完美化解了对大模型实操经验不足的职位毒点预警。**"
+    },
+    {
+      "project_name": "某美妆品牌情人节大促商业诊断",
+      "role": "Data Lead",
+      "time": "2025.02 - 2025.03",
+      "source_link": "作品集链接",
+      "tech_stack": "SQL, Tableau, Pandas, PPT",
+      "star_s_background": "某美妆品牌在情人节大促期间退款率激增，业务端缺乏归因分析工具，无法定位具体诱因。",
+      "star_t_task": "需紧急排查营销话术、活动排期与退款率的关联，定位核心诱因，并输出可视化诊断报告。",
+      "star_a_actions": [
+        {
+          "subtitle": "多维数据清洗与特征工程",
+          "description": "使用 **Pandas** 处理 10万+ 条交易日志，清洗非结构化客诉文本..."
+        },
+        {
+          "subtitle": "漏斗归因与看板搭建",
+          "description": "通过搭建复杂的 **Tableau** 商业归因模型，直连 SQL 打通底层数据源。定位出“特定营销话术导致用户预期错位”是导致大促后期客诉退款激增的核心诱因。"
+        }
+      ],
+      "star_r_results": "**成功输出深度的商业诊断 PPT 报告，推动运营团队紧急迭代下一次大促话术，有效化解了用户对产品效果的负面舆情，预计可挽回约 15% 的异常退款损失。**"
+    }
+  ],
+  "work_experience": [
+    {
+      "company_name": "Tencent",
+      "title": "Owner",
+      "time": "2025.10 - 至今",
+      "actions": [
+        {
+          "subtitle": "大模型与 RPA 的工程化整合",
+          "description": "独立主导从 0 到 1 的自动化岗位抓取系统开发，将每日筛选、改写、上传飞书的耗时缩短至 5 分钟以内。",
+          "result": "**针对自身5-10年经验硬伤，利用该系统微调核心项目经历，突出了从 0 到 1 独立 Owner 的 Owner 意识与跨界重塑能力，极大提升了自身的求职竞争力。**"
+        }
+      ]
+    },
+    {
+      "company_name": "某头部出海电商",
+      "title": "商业归因与策略分析专家",
+      "time": "2022.07 - 2025.09",
+      "actions": [
+        {
+          "subtitle": "全栈研发能力的电商场景应用",
+          "description": "利用 Next.js, Python 敏捷构建了可视化监控看板，跨部门打通营销、库存与归因数据。",
+          "result": "**具备全链路产品交付能力，极大提升了自身在医疗大模型方向的落地应用潜力。**"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "school": "哈尔滨商业大学",
+      "degree": "社会工作（全日制本科）",
+      "time": "2018.09 - 2022.06"
+    }
+  ]
+}
