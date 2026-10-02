@@ -20,7 +20,7 @@ Auto-Job-Hunter 是一个工业级的多平台全自动求职系统。它不仅�
 
 v1 虽已归档，交流不散场 👋
 
-- **飞书交流群**（快问快答 / 使用咨询）：扫描下方二维码加入（需**飞书个人版**账号，**二维码永久有效**）。
+- **飞书交流群**（快问快答 / 使用咨询）：扫描下方二维码即可加入（**二维码永久有效**）。
 - **Bug 反馈与功能建议**：请到新仓库 [jolie-z/jobhunter-ai/issues](https://github.com/jolie-z/jobhunter-ai/issues) 提 Issue。
 
 <p align="center">
