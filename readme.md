@@ -5,6 +5,7 @@
 [![Next.js 14](https://img.shields.io/badge/Next.js-14-black)](https://nextjs.org/)
 [![License: Custom](https://img.shields.io/badge/License-Custom_NonCommercial-red.svg)](#-版权声明-license)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](http://makeapullrequest.com)
+[![Feishu Group](https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6-%E4%BA%A4%E6%B5%81%E7%BE%A4-00D6B9)](#-交流与反馈)
 
 > [!IMPORTANT]
 > **本仓库为 v1 存档（不再活跃开发）。** 全面升级版已迁移至 **[jolie-z/jobhunter-ai](https://github.com/jolie-z/jobhunter-ai)** 持续迭代：新增智联招聘支持、四分屏定制工作台、在线简历多平台回写、面试训练营与飞书 ChatAgent。欢迎老朋友到新仓库点个 ⭐
@@ -14,6 +15,17 @@
 Auto-Job-Hunter 是一个工业级的多平台全自动求职系统。它不仅仅是一个爬虫，而是一个集成了 **DOM 穿透抓取、多智能体(Multi-Agent)简历重写、一票否决规则树、以及飞书云端大盘** 的硬核求职矩阵。
 
 支持平台：**BOSS 直聘** | **前程无忧 (51job)** | **猎聘网**
+
+## 💬 交流与反馈
+
+v1 虽已归档，交流不散场 👋
+
+- **飞书交流群**（快问快答 / 使用咨询）：扫描下方二维码加入（需**飞书个人版**账号，**二维码永久有效**）。
+- **Bug 反馈与功能建议**：请到新仓库 [jolie-z/jobhunter-ai/issues](https://github.com/jolie-z/jobhunter-ai/issues) 提 Issue。
+
+<p align="center">
+  <img src="docs/feishu_group_qr.png" alt="飞书交流群二维码（永久有效）" width="280">
+</p>
 
 ---
 
